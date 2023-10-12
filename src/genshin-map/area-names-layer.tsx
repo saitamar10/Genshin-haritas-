@@ -6,11 +6,11 @@ import { store } from "../store";
 import { state } from "./state";
 
 const areaNames = [
-  { name: "枫丹", x: -5539, y: -5395, children: [] },
-  { name: "须弥", x: -4781, y: 829, children: [] },
-  { name: "璃月", x: -875, y: -1094, children: [] },
-  { name: "蒙德", x: 1476, y: -3067, children: [] },
-  { name: "稻妻", x: 4746, y: 4685, children: [] },
+  { name: "Fontaine", x: -5539, y: -5395, children: [] },
+  { name: "Sümer", x: -4781, y: 829, children: [] },
+  { name: "Liyue", x: -875, y: -1094, children: [] },
+  { name: "Mondstadt", x: 1476, y: -3067, children: [] },
+  { name: "Daoqi", x: 4746, y: 4685, children: [] },
 ];
 
 export function AreaNamesLayer() {
