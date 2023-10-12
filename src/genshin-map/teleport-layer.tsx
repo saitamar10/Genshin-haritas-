@@ -13,7 +13,7 @@ export function TeleportLayer() {
   const teleports = [] as AreaItem[];
   const statues = [] as AreaItem[];
   for (const i of allTeleports) {
-    if (i.getName() == "七天神像") {
+    if (i.getName() == "Yedi Göksel Tanrı Heykeli") {
       statues.push(i);
     } else {
       teleports.push(i);
