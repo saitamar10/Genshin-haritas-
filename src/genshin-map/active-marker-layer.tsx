@@ -53,7 +53,7 @@ function MarkerInfo({ marker, areaItem, x, y }: AreaItemMarker) {
           )}
           onClick={() => unmark(marker)}
         >
-          未完成
+          yapılmamış
         </div>
         <div
           className={classNames(
@@ -64,7 +64,7 @@ function MarkerInfo({ marker, areaItem, x, y }: AreaItemMarker) {
           )}
           onClick={() => mark(marker)}
         >
-          已完成
+          tamamlanmış
         </div>
       </div>
     );
