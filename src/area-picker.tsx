@@ -8,11 +8,11 @@ interface AreaConfig {
 }
 
 const areas: Record<string, AreaConfig> = {
-  蒙德: { icon: require("../images/mondstadt.png"), color: "#60fff5" },
-  璃月: { icon: require("../images/liyue.png"), color: "#ffdc60" },
-  稻妻: { icon: require("../images/inazuma.png"), color: "#9360ff" },
-  须弥: { icon: require("../images/sumeru.png"), color: "#afff60" },
-  枫丹: { icon: require("../images/fontaine.png"), color: "#52e5ff" },
+  Mondstadt: { icon: require("../images/mondstadt.png"), color: "#60fff5" },
+  Liyue: { icon: require("../images/liyue.png"), color: "#ffdc60" },
+  Inazuma: { icon: require("../images/inazuma.png"), color: "#9360ff" },
+  Sumeru: { icon: require("../images/sumeru.png"), color: "#afff60" },
+  Fontaine: { icon: require("../images/fontaine.png"), color: "#52e5ff" },
 };
 
 const state = proxy({ visible: false });
@@ -56,7 +56,7 @@ export function AreaPicker() {
                 className="w-5 md:h-5 mr-1"
                 src={require("../images/icon-compass.png")}
               />
-              <div className="leading-none text-sm">更换地区</div>
+              <div className="leading-none text-sm">Bölge değiştir</div>
             </div>
             <div className="text-xl md:text-2xl font-semibold">
               {activeTopArea.getName()}
@@ -66,10 +66,10 @@ export function AreaPicker() {
             className="text-yellow-400 font-bold text-sm md:text-base"
             style={{ textShadow: "0 0 2px #000" }}
           >
-            当前选择 -{" "}
+            Şu anki seçim -{" "}
             {activeSubArea
               ? activeSubArea.getName()
-              : `${activeTopArea.getName()}全地区`}
+              : `${activeTopArea.getName()}Tüm bölgeler`}
           </div>
         </div>
         <img
