@@ -11,17 +11,17 @@ export function Settings() {
     <div className="absolute z-10 bottom-4 left-4 flex flex-col gap-1.5">
       <Switch
         defaultValue={state.undergroundEnabled}
-        label="分层地图"
+        label="katmanlı harita"
         onChange={toggleUnderground}
       />
       <Switch
         defaultValue={state.teleportVisible}
-        label="传送点"
+        label="Işınlanma noktası"
         onChange={toggleTeleport}
       />
       <Switch
         defaultValue={state.markedVisible}
-        label="已标记点位"
+        label="İşaretli nokta"
         onChange={toggleMarkedVisible}
       />
     </div>
