@@ -9,14 +9,14 @@ import { activateMarker, AreaItemMarker, state } from "./state";
 
 const isSafari = navigator.userAgent.includes("iPhone");
 const teleportNames = [
-  "传送锚点",
-  "七天神像",
-  "秘境",
-  "征讨领域",
-  "奖励秘境",
-  "浪船锚点",
+  "ışınlanma çapası",
+  "Yedi Göksel Tanrı Heykeli",
+  "gizli bölge",
+  "fetih alanı",
+  "Ödül Gizli Bölgesi",
+  "dalga teknesi bağlantı noktası",
 ];
-export const borderlessNames = [...teleportNames, "山洞洞口"];
+export const borderlessNames = [...teleportNames, "Mağara girişi"];
 
 interface AreaItemLayerProps {
   areaItem: AreaItem;
@@ -140,13 +140,13 @@ function BorderlessMarkerLayer({
       anchor={bottomCenterAnchor}
       cacheKey={`${areaItem.getName()}_${underground}`}
       zIndex={
-        areaItem.getName() == "七天神像" ? zIndex.marker + 2 : zIndex.marker + 1
+        areaItem.getName() == "Yedi Göksel Tanrı Heykeli" ? zIndex.marker + 2 : zIndex.marker + 1
       }
     >
       <div
         className={classNames(
           "flex justify-center items-center",
-          areaItem.getName() == "七天神像" ? "w-9 h-9" : "w-7 h-7"
+          areaItem.getName() == "Yedi Göksel Tanrı Heykeli" ? "w-9 h-9" : "w-7 h-7"
         )}
       >
         <img
